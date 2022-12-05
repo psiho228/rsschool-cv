@@ -2,7 +2,7 @@
 
 ## Contacts
 + Location: Georgia, Tbilisi
-+ Phone: +79191066573
++ Phone: +995599450324
 + Email: irm.228322@gmail.com
 + GitHub: Psiho228
 # About me
