@@ -1,7 +1,255 @@
-body {
-    background-color: grey;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+header {
+	background-image: url(https://prodengiblog.ru/wp-content/uploads/2016/05/1.jpg);
+	
 }
+body {
+	background-image: url(https://gamerwall.pro/uploads/posts/2022-03/1647857642_2-gamerwall-pro-p-fon-dlya-saita-krasivie-2.jpg);
+  
+	
+}
+.table {
+	background-color: lightblue;
+	background-size: cover;
+	width: 220px;
+	height: 100px;
+	border: 1px solid grey;
+	margin-top: 100%;
+	}
+th{
+	border: 1px solid grey;
+
+}
+  .me{
+	  font-family: 'Lobster', cursive;
+	  text-align: center;
+	  background-color: antiquewhite;
+	  width: 350px;
+	  height: 200px;
+	  border: 2px solid black;
+	  margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 50px ;
+	  
+  }
+  hr {
+	border-top: 2px solid black;
+    width: 100%;
+    
+	  
+  }
+  .skills {
+	  font-family: 'Lobster', cursive;
+	  background-color: antiquewhite;
+	  width: 190px;
+	  height: 400px;
+	  text-align: center;
+	  border: 2px solid black;
+  }
+  .center{
+	  width: 190px;
+	  height: 35px;
+	  text-align: center;
+	  font-family: Snell Roundhand, cursive;
+	  position: relative;
+	  bottom: -180px;
+  }
+  .right{
+	 
+	 text-align: center;
+	font-family: Snell Roundhand, cursive;
+  width: 190px;
+  height: 400px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  }	
+  .code{
+	font-family: Snell Roundhand, cursive;
+	  background-color: antiquewhite;
+	  width: 500px;
+	  height: 900px;
+	 border: 2px solid black;
+	 margin-left: auto;
+    margin-right: auto;
+	 text-align: center;
+	 }
+  
+  .img {
+	  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 60%;
+  
+  }
+  .a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 1px;
+	background: LightBlue;
+}
+a:hover {
+	background: black;
+}
+a:active {
+	position: relative;
+	top: 6px;
+	box-shadow: 0px 0px #23a33d;
+	background: #23a33d;
+}
+.english{
+	text-align: center;
+	font-family: Snell Roundhand, cursive;
+  width: 190px;
+  height: 400px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  
+}
+footer{
+	background-image: url(https://prodengiblog.ru/wp-content/uploads/2016/05/1.jpg);
+	
+}
+
+#side-checkbox {
+    display: none;
+}
+.side-panel {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: -360px;
+    background: #337AB7;
+    transition: all 0.5s;   
+    width: 320px;
+    height: 100vh;
+    box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+    color: #FFF;
+    padding: 40px 20px;
+}
+.side-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #BFE2FF;
+	text-align: center;
+}
+
+.side-button-1-wr {
+    text-align: center; 
+}
+.side-button-1 {
+    display: inline-block;
+}
+.side-button-1 .side-b {
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    font-family: 'Roboto', Тahoma, sans-serif;
+    background: #337AB7;
+    cursor: pointer; 
+    border: 2px solid #BFE2FF;
+}
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+    color: #FFF;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+    background: green;
+}
+.side-button-1 .side-close:after,
+.side-button-1 .side-close:before {
+    background: red;
+}
+.side-button-1 .side-b:before {
+    top: -6px;
+}
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.side-button-1 .side-close {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+#side-checkbox:checked + .side-panel {
+    left: 0;
+}
+
+.side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #BFE2FF;    
+    transition: all 280ms ease-in-out;    
+}
+.side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);    
+    color: #FFF;
+}
+.tabler{
+	width: 100%;
+	height: 500px;
+	border-spacing: 0;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 100px;
+	
+}
+td{
+	width: 50%;
+	vertical-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	}
+footer{
+    text-align: center;
+}
+.space{
+	margin-bottom: 10px;
+}
+ main {
+	 text-align: center;
+	}
+	.name{
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+    }
+	.logo{
+	border: 1px Solid Black;	
+	}
