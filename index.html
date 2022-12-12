@@ -1,9 +1,187 @@
 <!DOCTYPE html>
-<html lang="ru-eng">
+<html lang="en" >
   <head>
-   <title>CV</title>
-  </head>
+  <title>My CV</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+    </head>
   <body>
-    <b> Здесь скоро будет текст </b>
-  </body>
+  
+  
+    <header>
+    <div class="name">
+	<h1>Sheredega Nikolay</h1>
+	</div>
+	<div class="img">
+	<img src="https://i.imgur.com/U3SWzbZ.png" alt="MyPhoto" width="300" height="500">
+	</div>
+		<input type="checkbox" id="side-checkbox">
+<div class="side-panel">
+    <label class="side-button-2" for="side-checkbox">+</label>    
+    <div class="side-title">Myself</div>
+    <nav class="a">
+    <ul>
+    <li>
+	<a href="#anchor">My skills</a> 
+    </li>
+    <li> 
+	<a href="#anchor2">My GitHub</a>
+    </li>
+    <li>
+     <a href="#anchor1">My Education</a> 
+	 </li>
+	 <li> <a href="https://github.com/psiho228/rsschool-cv">My project</a>  </li>
+	 </ul>
+	</nav>
+	<div class="table">
+	<table>
+	<tr>
+	<th> <b>My contacts</b> </th>
+	</tr>
+	<tr>
+	<th> Location: Georgia, Tbilisi</th>
+	</tr>
+	<tr>
+	<th>Phone: +995599450324</th>
+	</tr>
+	<tr>
+	<th> Email: irm.228322@gmail.com </th>
+	</tr>
+	</table>
+	</div>
+    
+</div>
+<div class="side-button-1-wr">
+    <label class="side-button-1" for="side-checkbox">
+        <span class="side-b side-open">Open</span>
+        <span class="side-b side-close">Close</span>
+    </label>
+	
+</div>
+	</header> 
+	<hr>
+	<main>
+	
+	<div class="me">
+	<h2>About me</h2>
+	I'm good in team work and also easyly learning something new. I'm always trying to improve my skills.
+	And I'm not a stressful person, so you can depend on me in any problem.
+	</div>
+	
+	
+	
+	
+	<div class="style">
+	
+	</div>
+	<div class="code">
+	<h2>My code example</h2>
+	<pre>
+<code> const api = "https://api.exchangerate-api.com/v4/latest/USD";
+
+  
+
+var search = document.querySelector(".searchBox");
+var convert = document.querySelector(".convert");
+var fromCurrecy = document.querySelector(".from");
+var toCurrecy = document.querySelector(".to");
+var finalValue = document.querySelector(".finalValue");
+var finalAmount = document.getElementById("finalAmount");
+var resultFrom;
+var resultTo;
+var searchValue;
+  
+
+fromCurrecy.addEventListener('change', (event) => {
+    resultFrom = `${event.target.value}`;
+});
+  
+
+toCurrecy.addEventListener('change', (event) => {
+    resultTo = `${event.target.value}`;
+});
+  
+search.addEventListener('input', updateValue);
+  
+
+function updateValue(e) {
+    searchValue = e.target.value;
+}
+  
+
+convert.addEventListener("click", getResults);
+  
+
+function getResults() {
+    fetch(`${api}`)
+        .then(currency => {
+            return currency.json();
+        }).then(displayResults);
+}
+  
+
+function displayResults(currency) {
+    let fromRate = currency.rates[resultFrom];
+    let toRate = currency.rates[resultTo];
+    finalValue.innerHTML = 
+       ((toRate / fromRate) * searchValue).toFixed(2);
+    finalAmount.style.display = "block";
+}
+
+</code>
+</pre>
+</div>
+
+	</main>
+	<div class="tabler">
+	<table> 
+	<tr>
+	<td>
+	<div class="skills">
+	<h2>My skills</h2>
+	<ul>
+    <li>HTML(basics)</li>
+    <li>CSS(basics)</li>
+    <li>JavaScript(basics)</li>
+	</ul>
+	<a id="anchor"></a>
+	</div>
+	</td>
+	<td>
+	<div class="english">
+	<h2>My English</h2>
+	<ul>
+    <li>B1-B2
+	(didn't have much practice recently)</li>
+    </ul>
+    </div>
+	</td>
+	<td>
+	<div class="right">
+	<h2>My education</h2>
+	<ul>
+    <li>Three years of Moscow Technological University</li>
+    <li>Self-studying</li>
+    
+</ul>
+	<a id="anchor1"></a>
+	</div></td>
+	</table>
+</div>
+	
+	<hr>
+	
+	<footer>
+	<img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RssApp" width="500" height="100"  usemap="#School">
+    <map name="School">
+    <area shape="rect" coords="0,0,500,100" href="https://rs.school/js/" alt="RSS-course" target="_blank">
+    </map><div class="space">
+    <div class="a">
+	<b><em> <a href="https://github.com/psiho228">My GitHub</a> </em> </b> <a id="anchor2"></a>
+	</div>
+	</div>
+	<b>Made in 2022</b>
+	</footer>
+	
+	</body>
 </html>
